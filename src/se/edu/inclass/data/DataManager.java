@@ -57,6 +57,7 @@ public class DataManager {
             ArrayList<String> dataItems = readFile();
             taskList = parse(dataItems);
         } catch (IOException e) {
+            System.out.println("File access issues. Please check.");
             e.printStackTrace();
         }
         return taskList;
